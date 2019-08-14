@@ -4,3 +4,9 @@
 [submodule "random-keyboard-parts.pretty"]
 	path = random-keyboard-parts.pretty
 	url = https://github.com/ai03-2725/random-keyboard-parts.pretty.git
+[submodule "cherrymx-eagle"]
+	path = cherrymx-eagle
+	url = https://github.com/c0z3n/cherrymx-eagle.git
+[submodule "SparkFun-Eagle-Libraries"]
+	path = SparkFun-Eagle-Libraries
+	url = https://github.com/sparkfun/SparkFun-Eagle-Libraries.git
