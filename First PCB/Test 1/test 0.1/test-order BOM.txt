@@ -1,0 +1,9 @@
+Order list for C:/Users/Mint/Documents/EAGLE/projects/Learning/First PCB/Test 1/test 0.1/test.sch
+Exported from EAGLE with DesignLink
+
+Quantity	Value	Package	Order code	Manufacturer	Manuf. Code	Availability	Price (from)	Description
+1	SPARKFUN_PRO_MICRO	SPARKFUN_PRO_MICRO	unknown					
+2	1N4148DO35-7	DO35-7	unknown					
+2	CHERRY-MX-DIODE	CHERRY-MX-DIODE	unknown					
+1	10k	0402	94X1379		MCWR06X1002FTL	299994	0.011	MULTICOMP - MCWR06X1002FTL - SURFACE MOUNT THICK FILM RESISTOR, MCWR SERIES ROHS COMPLIANT: YES
+1	B3U-1000P	B3U-1000P	78M0188		B3U-1000P	1485	0.526	OMRON ELECTRONIC COMPONENTS - B3U-1000P - TACTILE SWITCH, SPST-NO, 0.05A, SMD
