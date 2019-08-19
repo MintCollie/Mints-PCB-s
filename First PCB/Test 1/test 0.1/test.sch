@@ -1016,6 +1016,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="MPN" value="MCWR06X1002FTL"/>
 <attribute name="OC_NEWARK" value="94X1379"/>
 </part>
+<part name="U$1" library="cherrymx" deviceset="CHERRY-MX-DIODE" device=""/>
+<part name="U$2" library="cherrymx" deviceset="CHERRY-MX-DIODE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1029,11 +1031,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="MF" x="101.6" y="30.48" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="101.6" y="30.48" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="DIODE" gate="G$1" x="27.94" y="40.64" smashed="yes" rot="R180">
-<attribute name="NAME" x="33.274" y="48.26" size="1.778" layer="95" rot="R180"/>
-<attribute name="OC_NEWARK" x="27.94" y="40.64" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="27.94" y="40.64" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="27.94" y="40.64" size="1.778" layer="96" display="off"/>
+<instance part="DIODE" gate="G$1" x="25.4" y="33.02" smashed="yes" rot="R270">
+<attribute name="NAME" x="17.78" y="38.354" size="1.778" layer="95" rot="R270"/>
+<attribute name="OC_NEWARK" x="25.4" y="33.02" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MF" x="25.4" y="33.02" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MPN" x="25.4" y="33.02" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="D1" gate="G$1" x="2.54" y="55.88" smashed="yes" rot="R90">
 <attribute name="NAME" x="2.0574" y="58.42" size="1.778" layer="95" rot="R90"/>
@@ -1042,11 +1044,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="MF" x="2.54" y="55.88" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="2.54" y="55.88" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="DIODE1" gate="G$1" x="-20.32" y="40.64" smashed="yes" rot="R180">
-<attribute name="NAME" x="-14.986" y="48.26" size="1.778" layer="95" rot="R180"/>
-<attribute name="OC_NEWARK" x="-20.32" y="40.64" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="-20.32" y="40.64" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="-20.32" y="40.64" size="1.778" layer="96" display="off"/>
+<instance part="DIODE1" gate="G$1" x="-22.86" y="30.48" smashed="yes" rot="R270">
+<attribute name="NAME" x="-30.48" y="35.814" size="1.778" layer="95" rot="R270"/>
+<attribute name="OC_NEWARK" x="-22.86" y="30.48" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MF" x="-22.86" y="30.48" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MPN" x="-22.86" y="30.48" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="D2" gate="G$1" x="2.54" y="40.64" smashed="yes" rot="R90">
 <attribute name="NAME" x="2.0574" y="43.18" size="1.778" layer="95" rot="R90"/>
@@ -1067,6 +1069,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="OC_NEWARK" x="142.24" y="48.26" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="142.24" y="48.26" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="142.24" y="48.26" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$1" gate="G$1" x="25.4" y="68.58" smashed="yes" rot="R270">
+<attribute name="NAME" x="17.78" y="73.914" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="U$2" gate="G$1" x="-22.86" y="68.58" smashed="yes" rot="R270">
+<attribute name="NAME" x="-30.48" y="73.914" size="1.778" layer="95" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -1098,31 +1106,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="B1" gate="G$1" pin="GND@2"/>
 <wire x1="132.08" y1="60.96" x2="132.08" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="43.18" x2="114.3" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="DIODE" gate="G$1" pin="SW1"/>
-<wire x1="55.88" y1="38.1" x2="38.1" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="B1" gate="G$1" pin="*3"/>
-<wire x1="91.44" y1="33.02" x2="55.88" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="33.02" x2="55.88" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="DIODE" gate="G$1" pin="D1"/>
-<pinref part="D2" gate="G$1" pin="A"/>
-<wire x1="12.7" y1="38.1" x2="2.54" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="D2" gate="G$1" pin="C"/>
-<wire x1="2.54" y1="43.18" x2="-2.54" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="43.18" x2="-2.54" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="DIODE1" gate="G$1" pin="SW1"/>
-<wire x1="-2.54" y1="38.1" x2="-10.16" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

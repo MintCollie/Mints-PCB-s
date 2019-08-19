@@ -982,13 +982,40 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </class>
 </classes>
 <parts>
-<part name="B1" library="SparkFun-Boards" library_urn="urn:adsk.eagle:library:509" deviceset="SPARKFUN_PRO_MICRO" device="" package3d_urn="urn:adsk.eagle:package:37326/1"/>
-<part name="DIODE" library="cherrymx" deviceset="CHERRY-MX-DIODE" device=""/>
-<part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-7" package3d_urn="urn:adsk.eagle:package:43339/2"/>
-<part name="DIODE1" library="cherrymx" deviceset="CHERRY-MX-DIODE" device=""/>
-<part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-7" package3d_urn="urn:adsk.eagle:package:43339/2"/>
-<part name="SW2" library="Switch" library_urn="urn:adsk.eagle:library:11396471" deviceset="B3U-1000P" device="" package3d_urn="urn:adsk.eagle:package:10899220/2"/>
-<part name="R1" library="SparkFun-Resistors" deviceset="10KOHM" device="-0402-1/16W-1%" value="10k"/>
+<part name="B1" library="SparkFun-Boards" library_urn="urn:adsk.eagle:library:509" deviceset="SPARKFUN_PRO_MICRO" device="" package3d_urn="urn:adsk.eagle:package:37326/1">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
+<part name="DIODE" library="cherrymx" deviceset="CHERRY-MX-DIODE" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
+<part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-7" package3d_urn="urn:adsk.eagle:package:43339/2">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
+<part name="DIODE1" library="cherrymx" deviceset="CHERRY-MX-DIODE" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
+<part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-7" package3d_urn="urn:adsk.eagle:package:43339/2">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
+<part name="SW2" library="Switch" library_urn="urn:adsk.eagle:library:11396471" deviceset="B3U-1000P" device="" package3d_urn="urn:adsk.eagle:package:10899220/2">
+<attribute name="MF" value=""/>
+<attribute name="OC_NEWARK" value="78M0188"/>
+</part>
+<part name="R1" library="SparkFun-Resistors" deviceset="10KOHM" device="-0402-1/16W-1%" value="10k">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value="MCWR06X1002FTL"/>
+<attribute name="OC_NEWARK" value="94X1379"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -998,28 +1025,48 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="B1" gate="G$1" x="101.6" y="30.48" smashed="yes">
 <attribute name="NAME" x="93.98" y="49.022" size="1.778" layer="95"/>
 <attribute name="VALUE" x="93.98" y="12.7" size="1.778" layer="96"/>
+<attribute name="OC_NEWARK" x="101.6" y="30.48" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="101.6" y="30.48" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="101.6" y="30.48" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="DIODE" gate="G$1" x="27.94" y="40.64" smashed="yes" rot="R180">
 <attribute name="NAME" x="33.274" y="48.26" size="1.778" layer="95" rot="R180"/>
+<attribute name="OC_NEWARK" x="27.94" y="40.64" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="27.94" y="40.64" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="27.94" y="40.64" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="D1" gate="G$1" x="7.62" y="55.88" smashed="yes" rot="R90">
 <attribute name="NAME" x="7.1374" y="58.42" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="9.9314" y="58.42" size="1.778" layer="96" rot="R90"/>
+<attribute name="OC_NEWARK" x="7.62" y="55.88" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="7.62" y="55.88" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="7.62" y="55.88" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="DIODE1" gate="G$1" x="27.94" y="55.88" smashed="yes" rot="R180">
 <attribute name="NAME" x="33.274" y="63.5" size="1.778" layer="95" rot="R180"/>
+<attribute name="OC_NEWARK" x="27.94" y="55.88" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="27.94" y="55.88" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="27.94" y="55.88" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="D2" gate="G$1" x="7.62" y="40.64" smashed="yes" rot="R90">
 <attribute name="NAME" x="7.1374" y="43.18" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="9.9314" y="43.18" size="1.778" layer="96" rot="R90"/>
+<attribute name="OC_NEWARK" x="7.62" y="40.64" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="7.62" y="40.64" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="7.62" y="40.64" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SW2" gate="G$1" x="142.24" y="60.96" smashed="yes">
 <attribute name="NAME" x="137.16" y="64.516" size="1.778" layer="95"/>
 <attribute name="VALUE" x="137.16" y="55.88" size="1.778" layer="96"/>
+<attribute name="OC_NEWARK" x="142.24" y="60.96" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="142.24" y="60.96" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R1" gate="G$1" x="142.24" y="48.26" smashed="yes">
 <attribute name="NAME" x="142.24" y="49.784" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="142.24" y="46.736" size="1.778" layer="96" font="vector" align="top-center"/>
+<attribute name="OC_NEWARK" x="142.24" y="48.26" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="142.24" y="48.26" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="142.24" y="48.26" size="1.778" layer="96" display="off"/>
 </instance>
 </instances>
 <busses>
