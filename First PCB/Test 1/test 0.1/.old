@@ -1767,27 +1767,27 @@ design rules under a new name.</description>
 <attribute name="OC_NEWARK" value="unknown" x="135.89" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="113.03" y="26.416" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" package="DO35-7" package3d_urn="urn:adsk.eagle:package:43339/2" value="1N4148DO35-7" x="71.54506875" y="44.196278125" smashed="yes" rot="R180">
-<attribute name="MF" value="" x="47.41506875" y="100.076278125" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="47.41506875" y="100.076278125" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="74.08504375" y="43.010934375" size="1.27" layer="25" ratio="10" rot="R180"/>
-<attribute name="OC_NEWARK" value="unknown" x="47.41506875" y="100.076278125" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" package="DO35-7" package3d_urn="urn:adsk.eagle:package:43339/2" value="1N4148DO35-7" x="50.5498375" y="41.3179" smashed="yes" rot="R180">
+<attribute name="MF" value="" x="26.4198375" y="97.1979" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="26.4198375" y="97.1979" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="53.0898125" y="40.13255625" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="OC_NEWARK" value="unknown" x="26.4198375" y="97.1979" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" package="DO35-7" package3d_urn="urn:adsk.eagle:package:43339/2" value="1N4148DO35-7" x="68.158740625" y="29.633290625" smashed="yes" rot="R180">
-<attribute name="MF" value="" x="27.518740625" y="85.513290625" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="27.518740625" y="85.513290625" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="70.444740625" y="28.363290625" size="1.27" layer="25" ratio="10" rot="R180"/>
-<attribute name="OC_NEWARK" value="unknown" x="27.518740625" y="85.513290625" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" package="DO35-7" package3d_urn="urn:adsk.eagle:package:43339/2" value="1N4148DO35-7" x="49.7879125" y="29.887265625" smashed="yes" rot="R180">
+<attribute name="MF" value="" x="9.1479125" y="85.767265625" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="9.1479125" y="85.767265625" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="52.0739125" y="28.617265625" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="OC_NEWARK" value="unknown" x="9.1479125" y="85.767265625" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="DIODE" library="cherrymx" package="CHERRY-MX-DIODE" value="CHERRY-MX-DIODE" x="88.9" y="34.29" smashed="yes">
 <attribute name="MF" value="" x="129.54" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="129.54" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="129.54" y="25.4" size="1.778" layer="27" display="off"/>
 </element>
-<element name="DIODE1" library="cherrymx" package="CHERRY-MX-DIODE" value="CHERRY-MX-DIODE" x="88.9" y="52.07" smashed="yes">
-<attribute name="MF" value="" x="110.49" y="7.62" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="110.49" y="7.62" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="110.49" y="7.62" size="1.778" layer="27" display="off"/>
+<element name="DIODE1" library="cherrymx" package="CHERRY-MX-DIODE" value="CHERRY-MX-DIODE" x="72.05301875" y="34.291778125" smashed="yes">
+<attribute name="MF" value="" x="93.64301875" y="-10.158221875" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="93.64301875" y="-10.158221875" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="93.64301875" y="-10.158221875" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R1" library="SparkFun-Resistors" package="0402" value="10k" x="100.33" y="30.48" smashed="yes" rot="R90">
 <attribute name="MF" value="" x="154.94" y="78.74" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1864,7 +1864,7 @@ design rules under a new name.</description>
 <signal name="N$5">
 <contactref element="D2" pad="C"/>
 <contactref element="DIODE1" pad="SW1"/>
-<wire x1="71.968740625" y1="29.633290625" x2="85.09" y2="54.61" width="0" layer="19" extent="1-1"/>
+<wire x1="53.5979125" y1="29.887265625" x2="68.24301875" y2="36.831778125" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

@@ -322,61 +322,6 @@ SparkFun Pro Micro
 </deviceset>
 </devicesets>
 </library>
-<library name="cherrymx">
-<description>Cherry MX Keyswitch PCB footprints</description>
-<packages>
-<package name="CHERRY-MX-DIODE">
-<description>Cherry MX Series Keyswitch footprint with holes for diode or wire bridge</description>
-<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.127" layer="21"/>
-<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.127" layer="21"/>
-<pad name="SW1" x="-3.81" y="2.54" drill="1.5" diameter="2.54"/>
-<pad name="SW2" x="2.54" y="5.08" drill="1.5" diameter="2.54"/>
-<pad name="P$3" x="-5.08" y="0" drill="1.7144" diameter="1.9304"/>
-<pad name="P$4" x="5.08" y="0" drill="1.7144" diameter="1.9304"/>
-<hole x="0" y="0" drill="4.0004"/>
-<pad name="D1" x="-3.81" y="-5.08" drill="1.016" diameter="1.6764"/>
-<pad name="D2" x="3.81" y="-5.08" drill="1.016" diameter="1.6764"/>
-</package>
-</packages>
-<symbols>
-<symbol name="CHERRY-MX-DIODE">
-<description>Schematic part for Cherry MX series keyswitch with additional pins for diode bridge.</description>
-<text x="-5.334" y="5.588" size="1.4224" layer="95">CHERRY-MX-DIODE</text>
-<pin name="SW1" x="-10.16" y="2.54" length="middle"/>
-<pin name="SW2" x="-10.16" y="-2.54" length="middle"/>
-<text x="-5.334" y="-7.62" size="1.778" layer="95">&gt;NAME</text>
-<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<pin name="D1" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="D2" x="15.24" y="-2.54" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="CHERRY-MX-DIODE">
-<description>Cherry MX series keyswitch with diode bridge</description>
-<gates>
-<gate name="G$1" symbol="CHERRY-MX-DIODE" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="CHERRY-MX-DIODE">
-<connects>
-<connect gate="G$1" pin="D1" pad="D1"/>
-<connect gate="G$1" pin="D2" pad="D2"/>
-<connect gate="G$1" pin="SW1" pad="SW1"/>
-<connect gate="G$1" pin="SW2" pad="SW2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="diode" urn="urn:adsk.eagle:library:210">
 <description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
 Based on the following sources:
@@ -972,6 +917,55 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="cherrymx">
+<description>Cherry MX Keyswitch PCB footprints</description>
+<packages>
+<package name="CHERRY-MX">
+<description>Cherry MX Keyswitch footprint</description>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.127" layer="21"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.127" layer="21"/>
+<pad name="SW1" x="-3.81" y="2.54" drill="1.5" diameter="2.54"/>
+<pad name="SW2" x="2.54" y="5.08" drill="1.5" diameter="2.54"/>
+<pad name="P$3" x="-5.08" y="0" drill="1.7144" diameter="1.9304"/>
+<pad name="P$4" x="5.08" y="0" drill="1.7144" diameter="1.9304"/>
+<hole x="0" y="0" drill="4.0004"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CHERRY-MX">
+<description>Basic part for Cherry MX series keyswitch</description>
+<text x="-6.096" y="5.842" size="1.4224" layer="95">CHERRY-MX</text>
+<pin name="PIN-1" x="-10.16" y="2.54" length="middle"/>
+<pin name="PIN-2" x="-10.16" y="-2.54" length="middle"/>
+<text x="-5.08" y="-7.62" size="1.778" layer="95">&gt;NAME</text>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CHERRY-MX">
+<description>Cherry MX series keyswitch</description>
+<gates>
+<gate name="G$1" symbol="CHERRY-MX" x="-2.54" y="-25.4"/>
+</gates>
+<devices>
+<device name="" package="CHERRY-MX">
+<connects>
+<connect gate="G$1" pin="PIN-1" pad="SW1"/>
+<connect gate="G$1" pin="PIN-2" pad="SW2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -987,17 +981,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="MPN" value=""/>
 <attribute name="OC_NEWARK" value="unknown"/>
 </part>
-<part name="DIODE" library="cherrymx" deviceset="CHERRY-MX-DIODE" device="">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
-</part>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-7" package3d_urn="urn:adsk.eagle:package:43339/2">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
-</part>
-<part name="DIODE1" library="cherrymx" deviceset="CHERRY-MX-DIODE" device="">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_NEWARK" value="unknown"/>
@@ -1016,8 +1000,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="MPN" value="MCWR06X1002FTL"/>
 <attribute name="OC_NEWARK" value="94X1379"/>
 </part>
-<part name="U$1" library="cherrymx" deviceset="CHERRY-MX-DIODE" device=""/>
-<part name="U$2" library="cherrymx" deviceset="CHERRY-MX-DIODE" device=""/>
+<part name="U$1" library="cherrymx" deviceset="CHERRY-MX" device=""/>
+<part name="U$2" library="cherrymx" deviceset="CHERRY-MX" device=""/>
+<part name="U$3" library="cherrymx" deviceset="CHERRY-MX" device=""/>
+<part name="U$4" library="cherrymx" deviceset="CHERRY-MX" device=""/>
+<part name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-7" package3d_urn="urn:adsk.eagle:package:43339/2">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
+<part name="D4" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-7" package3d_urn="urn:adsk.eagle:package:43339/2">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -1031,31 +1027,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="MF" x="101.6" y="30.48" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="101.6" y="30.48" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="DIODE" gate="G$1" x="25.4" y="33.02" smashed="yes" rot="R270">
-<attribute name="NAME" x="17.78" y="38.354" size="1.778" layer="95" rot="R270"/>
-<attribute name="OC_NEWARK" x="25.4" y="33.02" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="MF" x="25.4" y="33.02" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="MPN" x="25.4" y="33.02" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="D1" gate="G$1" x="30.48" y="40.64" smashed="yes" rot="R270">
+<attribute name="NAME" x="30.9626" y="38.1" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="28.1686" y="38.1" size="1.778" layer="96" rot="R270"/>
+<attribute name="OC_NEWARK" x="30.48" y="40.64" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MF" x="30.48" y="40.64" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="30.48" y="40.64" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="D1" gate="G$1" x="2.54" y="55.88" smashed="yes" rot="R90">
-<attribute name="NAME" x="2.0574" y="58.42" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="4.8514" y="58.42" size="1.778" layer="96" rot="R90"/>
-<attribute name="OC_NEWARK" x="2.54" y="55.88" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="2.54" y="55.88" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="2.54" y="55.88" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="DIODE1" gate="G$1" x="-22.86" y="30.48" smashed="yes" rot="R270">
-<attribute name="NAME" x="-30.48" y="35.814" size="1.778" layer="95" rot="R270"/>
-<attribute name="OC_NEWARK" x="-22.86" y="30.48" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="MF" x="-22.86" y="30.48" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="MPN" x="-22.86" y="30.48" size="1.778" layer="96" rot="R90" display="off"/>
-</instance>
-<instance part="D2" gate="G$1" x="2.54" y="40.64" smashed="yes" rot="R90">
-<attribute name="NAME" x="2.0574" y="43.18" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="4.8514" y="43.18" size="1.778" layer="96" rot="R90"/>
-<attribute name="OC_NEWARK" x="2.54" y="40.64" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="2.54" y="40.64" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="2.54" y="40.64" size="1.778" layer="96" display="off"/>
+<instance part="D2" gate="G$1" x="2.54" y="40.64" smashed="yes" rot="R270">
+<attribute name="NAME" x="3.0226" y="38.1" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="0.2286" y="38.1" size="1.778" layer="96" rot="R270"/>
+<attribute name="OC_NEWARK" x="2.54" y="40.64" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MF" x="2.54" y="40.64" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="2.54" y="40.64" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="SW2" gate="G$1" x="142.24" y="60.96" smashed="yes">
 <attribute name="NAME" x="137.16" y="64.516" size="1.778" layer="95"/>
@@ -1070,11 +1054,31 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="MF" x="142.24" y="48.26" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="142.24" y="48.26" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U$1" gate="G$1" x="25.4" y="68.58" smashed="yes" rot="R270">
-<attribute name="NAME" x="17.78" y="73.914" size="1.778" layer="95" rot="R270"/>
+<instance part="U$1" gate="G$1" x="43.18" y="43.18" smashed="yes" rot="R270">
+<attribute name="NAME" x="35.56" y="48.26" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="U$2" gate="G$1" x="-22.86" y="68.58" smashed="yes" rot="R270">
-<attribute name="NAME" x="-30.48" y="73.914" size="1.778" layer="95" rot="R270"/>
+<instance part="U$2" gate="G$1" x="43.18" y="17.78" smashed="yes" rot="R270">
+<attribute name="NAME" x="35.56" y="22.86" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="U$3" gate="G$1" x="17.78" y="17.78" smashed="yes" rot="R270">
+<attribute name="NAME" x="10.16" y="22.86" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="U$4" gate="G$1" x="17.78" y="43.18" smashed="yes" rot="R270">
+<attribute name="NAME" x="10.16" y="48.26" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="D3" gate="G$1" x="-2.54" y="15.24" smashed="yes" rot="R270">
+<attribute name="NAME" x="-2.0574" y="12.7" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="-4.8514" y="12.7" size="1.778" layer="96" rot="R270"/>
+<attribute name="OC_NEWARK" x="-2.54" y="15.24" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MF" x="-2.54" y="15.24" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="-2.54" y="15.24" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="D4" gate="G$1" x="33.02" y="15.24" smashed="yes" rot="R270">
+<attribute name="NAME" x="33.5026" y="12.7" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="30.7086" y="12.7" size="1.778" layer="96" rot="R270"/>
+<attribute name="OC_NEWARK" x="33.02" y="15.24" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MF" x="33.02" y="15.24" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="33.02" y="15.24" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -1106,6 +1110,93 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="B1" gate="G$1" pin="GND@2"/>
 <wire x1="132.08" y1="60.96" x2="132.08" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="43.18" x2="114.3" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="*3"/>
+<wire x1="91.44" y1="33.02" x2="83.82" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="D4" gate="G$1" pin="C"/>
+<wire x1="33.02" y1="12.7" x2="33.02" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="7.62" x2="83.82" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="7.62" x2="83.82" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="7.62" x2="-2.54" y2="7.62" width="0.1524" layer="91"/>
+<junction x="33.02" y="7.62"/>
+<pinref part="D3" gate="G$1" pin="C"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="2"/>
+<wire x1="91.44" y1="35.56" x2="30.48" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="30.48" y1="35.56" x2="30.48" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="35.56" x2="2.54" y2="35.56" width="0.1524" layer="91"/>
+<junction x="30.48" y="35.56"/>
+<pinref part="D2" gate="G$1" pin="C"/>
+<wire x1="2.54" y1="35.56" x2="2.54" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="D1" gate="G$1" pin="A"/>
+<pinref part="U$1" gate="G$1" pin="PIN-2"/>
+<wire x1="30.48" y1="43.18" x2="30.48" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="53.34" x2="40.64" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PIN-1"/>
+<wire x1="45.72" y1="53.34" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="B1" gate="G$1" pin="4"/>
+<wire x1="53.34" y1="53.34" x2="55.88" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="53.34" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="30.48" x2="91.44" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="PIN-1"/>
+<wire x1="53.34" y1="53.34" x2="53.34" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="27.94" x2="45.72" y2="27.94" width="0.1524" layer="91"/>
+<junction x="53.34" y="53.34"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="2.54" y1="43.18" x2="2.54" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="PIN-2"/>
+<wire x1="2.54" y1="53.34" x2="15.24" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U$4" gate="G$1" pin="PIN-1"/>
+<wire x1="20.32" y1="53.34" x2="20.32" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="55.88" x2="25.4" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="B1" gate="G$1" pin="*5"/>
+<wire x1="25.4" y1="55.88" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="55.88" x2="58.42" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="27.94" x2="91.44" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="PIN-1"/>
+<wire x1="25.4" y1="55.88" x2="25.4" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="27.94" x2="20.32" y2="27.94" width="0.1524" layer="91"/>
+<junction x="25.4" y="55.88"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="PIN-2"/>
+<wire x1="40.64" y1="27.94" x2="33.02" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="D4" gate="G$1" pin="A"/>
+<wire x1="33.02" y1="27.94" x2="33.02" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="D3" gate="G$1" pin="A"/>
+<pinref part="U$3" gate="G$1" pin="PIN-2"/>
+<wire x1="-2.54" y1="17.78" x2="-2.54" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="27.94" x2="15.24" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
